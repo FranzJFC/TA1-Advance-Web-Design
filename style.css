@@ -194,7 +194,8 @@ a:hover {
     font-size: 1.1rem;
     font-weight: 300;
     letter-spacing: 1px;
-    opacity: 0.95;
+    opacity: 1;
+    color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -239,11 +240,17 @@ a:hover {
     object-fit: cover;
     display: block;
     box-shadow: 0 8px 24px var(--shadow);
-    transition: box-shadow 0.4s ease;
+    transition: box-shadow 0.4s ease, transform 0.4s ease, cursor 0.4s ease;
+    cursor: pointer;
 }
 
 .editorial-image:hover {
     box-shadow: 0 12px 32px var(--shadow-hover);
+    transform: scale(1.02);
+}
+
+.editorial-block img {
+    cursor: pointer;
 }
 
 .editorial-text {
@@ -269,6 +276,28 @@ a:hover {
 
 .editorial-text p:last-child {
     margin-bottom: 0;
+}
+
+/* Read More Button Style */
+.read-more-btn {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.75rem 2rem;
+    background-color: var(--muted-gold);
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    border: 2px solid var(--muted-gold);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.read-more-btn:hover {
+    background-color: transparent;
+    color: var(--muted-gold);
+    transform: translateX(5px);
 }
 
 @media (max-width: 768px) {
