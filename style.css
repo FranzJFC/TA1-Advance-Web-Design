@@ -164,6 +164,17 @@ a:hover {
     object-position: center;
 }
 
+/* Image sizing (site-wide) */
+.hero {
+    height: 65vh;
+    min-height: 360px;
+}
+
+.editorial-image {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
 .hero-overlay {
     position: absolute;
     width: 100%;
